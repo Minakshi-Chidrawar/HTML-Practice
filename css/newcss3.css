@@ -11,6 +11,10 @@ body {
 	text-align: center;
 	border: 1px solid #999999;
 	background: #DDDDDD;
+	
+	-moz-border-radius: 20px 10px 30px 50px;
+	-webkit-border-radius: 20px 10px 30px 50px;
+	border-radius: 20px 10px 30px 50px;
 }
 
 title {
