@@ -22,9 +22,12 @@ body {
 	
 	/*background: -webkit-linear-gradient(top, #FFFFFF, #006699);
 	background: -moz-linear-gradient(top, #FFFFFF, #006699);
-	background: linear-gradient(30deg, #FFFFFF, #006699);*/
+	background: linear-gradient(30deg, #FFFFFF, #006699);
 	background: linear-gradient(top, #FFFFFF 50%, #006699 90%);
-	/*background: linear-gradient(30deg, #FFFFFF, #006699);*/
+	background: linear-gradient(30deg, #FFFFFF, #006699);*/
+	background: -webkit-radial-gradient(center, circle, #FFFFFF 0%, #af2525 200%);
+	background: -moz-radial-gradient(center, circle, #FFFFFF 0%, #af2525 200%);	
+	background: radial-gradient(center, circle, #FFFFFF 0%, #af2525 200%);
 }
 
 #title {
