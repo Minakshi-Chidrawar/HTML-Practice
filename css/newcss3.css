@@ -16,9 +16,15 @@ body {
 	-webkit-border-radius: 20px / 10px;
 	border-radius: 20px / 10px;
 	
-	-moz-box-shadow: rgb(150,150,150) 5px 5px;
-	-webkit-box-shadow: rgb(150,150,150) 5px 5px;
-	box-shadow: rgb(150,150,150) 15px 5px inset;
+	-moz-box-shadow: rgb(150,150,150) 5px 5px 10px;
+	-webkit-box-shadow: rgb(150,150,150) 5px 5px 10px;
+	box-shadow: rgb(150,150,150) 15px 5px 10px;
+	
+	/*background: -webkit-linear-gradient(top, #FFFFFF, #006699);
+	background: -moz-linear-gradient(top, #FFFFFF, #006699);
+	background: linear-gradient(30deg, #FFFFFF, #006699);*/
+	background: linear-gradient(top, #FFFFFF 50%, #006699 90%);
+	/*background: linear-gradient(30deg, #FFFFFF, #006699);*/
 }
 
 #title {
