@@ -12,10 +12,15 @@ body {
 	border: 1px solid #999999;
 	background: #DDDDDD;
 	
-	outline: 2px dashed #000099;
+	
+	-moz-transform: scale(2);
+	-webkit-transform: scale(2);
+	
+	
+	/*outline: 2px dashed #000099;
 	outline-offset: 10px;
 	
-	/*-moz-border-radius: 20px / 10px;
+	-moz-border-radius: 20px / 10px;
 	-webkit-border-radius: 20px / 10px;
 	border-radius: 20px / 10px;
 	
