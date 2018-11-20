@@ -13,8 +13,8 @@ body {
 	background: #DDDDDD;
 	
 	
-	-moz-transform: scale(2);
-	-webkit-transform: scale(2);
+	-moz-transform: scale(1, -1);
+	-webkit-transform: scale(1, -1);
 	
 	
 	/*outline: 2px dashed #000099;
