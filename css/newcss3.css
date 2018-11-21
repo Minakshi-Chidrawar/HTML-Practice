@@ -12,8 +12,10 @@ body {
 	border: 1px solid #999999;
 	background: #DDDDDD;
 	
-	transform: translate(100px);
-	/*transform: skew(20deg);
+	
+	transform: translateY(100px) rotate(45deg) scaleX(0.3);
+	/*transform: translate(100px);
+	transform: skew(20deg);
 	transform: rotate(30deg);
 	
 	-moz-transform: scale(1, -1);
