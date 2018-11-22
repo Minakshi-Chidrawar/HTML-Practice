@@ -9,7 +9,18 @@
     <meta name="author" content="">
 
     <title>Script tag</title>
-	<script src="js/querySelectorAll.js"></script>
+	<script>
+		function showalert() {
+		alert('You clicked Me!');
+		}
+		
+		function clickme() {
+			var pelement = document.getElementByTagName('p')[0];
+			pelement.addEventListener('click', showalert, false);
+		}
+		
+		window.addEventListener('load', clickme, false);
+	</script>
 </head>
 
 <body>
