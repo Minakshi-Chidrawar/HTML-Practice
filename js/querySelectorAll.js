@@ -3,8 +3,10 @@ function showalert(){
 }
 
 function clickme() {
-	var list = document.querySelectorAll(#main p");
-	list[0].onclick=showalert;
+	var list = document.querySelectorAll("#main p");
+	for(var i = 0; i < list.length; i++) {
+		list[i].onclick = showalert;
+	}
 }
 
-window.onload=clickme;
+window.onload = clickme;
