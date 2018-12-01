@@ -1,11 +1,13 @@
 function initiate() {
-	maxim = 600;
+	maxim = 550;
 	mmedia = document.getElementById('media');
 	play = document.getElementById('play');
+	mute = document.getElementById('mute');
 	bar = document.getElementById('bar');
 	progress = document.getElementById('progress');
 	
 	play.addEventListener('click', push, false);
+	mute.addEventListener('click', muteVideo, false);
 	bar.addEventListener('click', move, false);
 }
 
@@ -27,6 +29,16 @@ function move(e) {
 		var newtime = mouseX * mmedia.duration/maxim;
 		mmedia.currentTime = newtime;
 		progress.style.width = mouseX+'px';
+	}
+}
+
+function muteVideo() {
+	if (!mmedia.muted) {
+		mmedia.muted = true;
+		mute.innerHTML = 'UnMute';
+	} else {
+		mmedia.muted = false;
+		mute.innerHTML = 'Mute';
 	}
 }
 window.addEventListener('load', initiate, false);
