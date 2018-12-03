@@ -74,11 +74,14 @@
 					title="insert the 5 numbers of your postal code">
 				</div>
 
-					<datalist id="mydata">
-						<option value="12312312323" label="Phone 1">
-						<option value="78978978989" label="Phone 2">
-					</datalist>
-
+				<datalist id="mydata">
+					<option value="12312312323" label="Phone 1">
+					<option value="78978978989" label="Phone 2">
+				</datalist>
+				<div>
+					<label for="myphone">tel: </label>
+					<input type="tel" name="myphone" id="myphone" list="mydata">
+				</div>
 				<div>
 					<input type="submit" value="Send">
 				</div>
