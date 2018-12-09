@@ -36,10 +36,14 @@ function initiate()
 		canvas.lineTo(500, f);
 	}
 	canvas.stroke();
-	*/
-	
+
 	canvas.beginPath();
 	canvas.arc(100, 100, 50, 0, Math.PI*2, false);
+	canvas.stroke();
+	*/
+	canvas.beginPath();
+	var radians = Math.PI/180*180;
+	canvas.arc(100, 100, 50, 0, radians, false);
 	canvas.stroke();
 }
 
