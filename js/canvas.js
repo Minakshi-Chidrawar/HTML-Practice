@@ -24,8 +24,11 @@ function initiate()
 	canvas.moveTo(100, 100);
 	canvas.lineTo(200, 200);
 	canvas.lineTo(100, 200);
+	/*
 	canvas.closePath();
 	canvas.stroke();
+	*/
+	canvas.fill();
 }
 
 window.addEventListener('load', initiate, false);
