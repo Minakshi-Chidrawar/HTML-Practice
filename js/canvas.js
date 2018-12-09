@@ -40,10 +40,18 @@ function initiate()
 	canvas.beginPath();
 	canvas.arc(100, 100, 50, 0, Math.PI*2, false);
 	canvas.stroke();
-	*/
+
 	canvas.beginPath();
 	var radians = Math.PI/180*180;
 	canvas.arc(100, 100, 50, 0, radians, false);
+	canvas.stroke();
+	*/
+	
+	canvas.beginPath();
+	canvas.moveTo(50, 50);
+	canvas.quadraticCurveTo(100, 125, 50, 200);
+	canvas.moveTo(250, 50);
+	canvas.bezierCurveTo(200, 125, 300, 125, 250, 200);
 	canvas.stroke();
 }
 
