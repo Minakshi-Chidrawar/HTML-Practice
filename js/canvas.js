@@ -79,8 +79,8 @@ function initiate()
 	canvas.fillText('My message', 100, 124);
 	var size = canvas.measureText('My message');
 	canvas.strokeRect(100, 100, size.width+50, 24);
-	*/
 	
+	//Shadow text
 	canvas.shadowColor = 'rgba(0, 0, 0, 0.5)';
 	canvas.shadowOffsetX = 4;
 	canvas.shadowOffsetY = 4;
@@ -88,6 +88,18 @@ function initiate()
 	
 	canvas.font = 'bold 50px verdana, sans-serif';
 	canvas.fillText('My message', 100, 100);
+	*/
+	canvas.font = 'bold 20px verdana, sans-serif';
+	canvas.fillText('TEST', 50, 20);
+	
+	canvas.translate(50, 70);
+	canvas.rotate(Math.PI/180*45);
+	
+	canvas.fillText('TEST', 0, 0);
+	canvas.rotate(Math.PI/180*45);
+	canvas.translate(0, 100);
+	canvas.scale(2, 2);
+	canvas.fillText('TEST', 0, 0);
 }
 
 window.addEventListener('load', initiate, false);
