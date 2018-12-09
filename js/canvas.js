@@ -18,17 +18,16 @@ function initiate()
 	
 	canvas.fillRect(10, 10, 100, 100);
 	canvas.fillRect(150, 10, 200, 100);
-	*/
-	
+
 	canvas.beginPath();
 	canvas.moveTo(100, 100);
 	canvas.lineTo(200, 200);
 	canvas.lineTo(100, 200);
-	/*
+	
 	canvas.closePath();
 	canvas.stroke();
 	canvas.fill();
-	*/
+	
 	canvas.clip();
 	canvas.beginPath();
 	for(f = 0; f < 300; f++)
@@ -36,6 +35,11 @@ function initiate()
 		canvas.moveTo(0, f);
 		canvas.lineTo(500, f);
 	}
+	canvas.stroke();
+	*/
+	
+	canvas.beginPath();
+	canvas.arc(100, 100, 50, 0, Math.PI*2, false);
 	canvas.stroke();
 }
 
