@@ -27,8 +27,16 @@ function initiate()
 	/*
 	canvas.closePath();
 	canvas.stroke();
-	*/
 	canvas.fill();
+	*/
+	canvas.clip();
+	canvas.beginPath();
+	for(f = 0; f < 300; f++)
+	{
+		canvas.moveTo(0, f);
+		canvas.lineTo(500, f);
+	}
+	canvas.stroke();
 }
 
 window.addEventListener('load', initiate, false);
