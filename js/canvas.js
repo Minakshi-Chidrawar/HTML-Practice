@@ -52,7 +52,7 @@ function initiate()
 	canvas.moveTo(250, 50);
 	canvas.bezierCurveTo(200, 125, 300, 125, 250, 200);
 	canvas.stroke();
-	*/
+	
 	canvas.beginPath();
 	canvas.arc(200, 150, 50, 0, Math.PI*2, false);
 	canvas.stroke();	
@@ -71,6 +71,11 @@ function initiate()
 	canvas.lineTo(215, 155);
 	canvas.lineTo(195, 155);
 	canvas.stroke();
+	*/
+	
+	canvas.font = 'bold 24px verdana, sans-serif';
+	canvas.textAlign = 'start';
+	canvas.fillText('My message', 100, 100);
 }
 
 window.addEventListener('load', initiate, false);
