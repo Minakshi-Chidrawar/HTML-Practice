@@ -75,7 +75,10 @@ function initiate()
 	
 	canvas.font = 'bold 24px verdana, sans-serif';
 	canvas.textAlign = 'start';
-	canvas.fillText('My message', 100, 100);
+	canvas.textBaseline = 'bottom';
+	canvas.fillText('My message', 100, 124);
+	var size = canvas.measureText('My message');
+	canvas.strokeRect(100, 100, size.width+50, 24);
 }
 
 window.addEventListener('load', initiate, false);
