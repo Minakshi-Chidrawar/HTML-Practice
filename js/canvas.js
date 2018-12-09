@@ -110,8 +110,8 @@ function initiate()
 	canvas.transform(1, 0, 0, 10, 0, 0);
 	canvas.font = 'bold 20px verdana, sans-serif';
 	canvas.fillText('TEST', 100, 20);
-	*/
 	
+	// save and restore
 	canvas.save();
 	canvas.translate(50, 70);
 	canvas.font = 'bold 20px verdana, sans-serif';
@@ -119,6 +119,18 @@ function initiate()
 	canvas.restore();
 	
 	canvas.fillText('TEST2', 0, 30);
+	*/
+	
+	canvas.fillStyle = '#990000';
+	canvas.fillRect(100, 100, 300, 100);
+	
+	canvas.globalCompositeOperation = 'destination-atop';
+	
+	canvas.fillStyle = '#AAAAFF';
+	canvas.font = 'bold 80px verdana, sans-serif';
+	canvas.textAlign = 'center';
+	canvas.textBaseline = 'middle';
+	canvas.fillText('TEST', 250, 110);
 }
 
 window.addEventListener('load', initiate, false);
