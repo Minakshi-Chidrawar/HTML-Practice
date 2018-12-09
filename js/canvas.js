@@ -89,7 +89,7 @@ function initiate()
 	canvas.font = 'bold 50px verdana, sans-serif';
 	canvas.fillText('My message', 100, 100);
 	
-	//trsnslate, rotate and scale
+	//translate, rotate and scale
 	canvas.font = 'bold 20px verdana, sans-serif';
 	canvas.fillText('TEST', 50, 20);
 	
@@ -101,8 +101,8 @@ function initiate()
 	canvas.translate(0, 100);
 	canvas.scale(2, 2);
 	canvas.fillText('TEST', 0, 0);
-	*/
 	
+	//transform
 	canvas.transform(3, 0, 0, 1, 0, 0);
 	canvas.font = 'bold 20px verdana, sans-serif';
 	canvas.fillText('TEST', 20, 20);
@@ -110,7 +110,15 @@ function initiate()
 	canvas.transform(1, 0, 0, 10, 0, 0);
 	canvas.font = 'bold 20px verdana, sans-serif';
 	canvas.fillText('TEST', 100, 20);
+	*/
 	
+	canvas.save();
+	canvas.translate(50, 70);
+	canvas.font = 'bold 20px verdana, sans-serif';
+	canvas.fillText('TEST1', 0, 30);
+	canvas.restore();
+	
+	canvas.fillText('TEST2', 0, 30);
 }
 
 window.addEventListener('load', initiate, false);
