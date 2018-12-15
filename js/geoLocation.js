@@ -6,7 +6,7 @@ function initiate()
 
 function getLocation()
 {
-	navigator.geolocation.getCurrentPosition(showinfo);
+	navigator.geolocation.getCurrentPosition(showinfo, showerror);
 }
 
 function showinfo(position)
@@ -17,6 +17,11 @@ function showinfo(position)
 	data += 'Longitude: ' + position.coords.longitude + '<br>';
 	data += 'Accuracy: ' + position.coords.accuracy + '<br>';
 	location.innerHTML = data;
+}
+
+function showerror(error)
+{
+	alert('Error: ' + error.code + ' ' + error.message);
 }
 
 window.addEventListener('load', initiate, false);
