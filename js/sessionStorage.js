@@ -6,14 +6,14 @@ function initiate(){
 function newitem(){
 	var keyword = document.getElementById('keyword').value;
 	var value = document.getElementById('text').value;
-	sessionStorage.setItem(keyword, value);
+	sessionStorage[keyword]  = value;
 	
 	show(keyword);
 }
 
 function show(keyword){
 	var databox = document.getElementById('databox');
-	var value = sessionStorage.getItem(keyword);
+	var value = sessionStorage[keyword];
 	databox.innerHTML = '<div>' + keyword + ' - ' + value + '</div>';
 }
 
