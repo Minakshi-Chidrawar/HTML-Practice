@@ -6,7 +6,12 @@ function initiate()
 
 function getLocation()
 {
-	navigator.geolocation.getCurrentPosition(showinfo, showerror);
+	var geoconfig = {
+		enableHighAccuracy: true,
+		//timeout: 10000,
+		maximumAge: 60000
+	};
+	navigator.geolocation.watchPosition(showinfo, showerror, geoconfig);
 }
 
 function showinfo(position)
@@ -15,7 +20,7 @@ function showinfo(position)
 	var data = '';
 	data += 'Latitude: ' + position.coords.latitude + '<br>';
 	data += 'Longitude: ' + position.coords.longitude + '<br>';
-	data += 'Accuracy: ' + position.coords.accuracy + '<br>';
+	data += 'Accuracy: ' + position.coords.accuracy + 'mts.<br>';
 	location.innerHTML = data;
 }
 
