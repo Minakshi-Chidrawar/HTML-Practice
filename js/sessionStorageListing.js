@@ -1,6 +1,7 @@
 function initiate(){
 	var button = document.getElementById('save');
 	button.addEventListener('click', newitem, false);
+	show();
 }
 
 function newitem(){
@@ -17,13 +18,13 @@ function show(){
 	var databox = document.getElementById('databox');
 	databox.innerHTML = '';
 	
-	for (var i=0; i<sessionStorage.length; i++);
+	for (var f=0; f<sessionStorage.length; f++)
 	{
-		var keyword = sessionStorage.key(i);
+		var keyword = sessionStorage.key(f);
 		var value = sessionStorage.getItem(keyword);
-		databox.innerHTML = '<div>' + keyword + ' - ' + value + '</div>';
+		
+		databox.innerHTML += '<div>' + keyword + ' - ' + value + '</div>';
 	}
-	
 }
 
 window.addEventListener('load', initiate, false);
