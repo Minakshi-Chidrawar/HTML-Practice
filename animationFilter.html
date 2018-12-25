@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Animation of filter</title>
+		<style> 
+			img {
+			  animation: mymove 7s infinite;
+			}
+
+			@keyframes mymove {
+			  50% {
+				filter: grayscale(100%);
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Animation of filter</h1>
+
+		<p>Gradually change the color of the image to black and white (100% grayscale), and back to its original colors:<p>
+
+		<img src="images/flower.jpg" alt="Pineapple" width="300" height="300">
+	</body>
+</html>
