@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Animation with Border</title>
+		<style> 
+			#myDIV {
+			  width: 300px;
+			  height: 200px;
+			  border: 1px solid black;
+			  animation: mymove 5s infinite;
+			}
+			
+			@keyframes mymove {
+			  75% {border: 15px solid lightblue;}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Animation of border</h1>
+
+		<p>Gradually change the border property:<p>
+		<div id="myDIV"></div>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<title>Animation with Background</title>
+	<head>
+		<style> 
+			#myDIV {
+			  width: 300px;
+			  height: 200px;
+			  background: red url('images/flower.gif') no-repeat top left/15px 15px;
+			  animation: mymove 5s infinite;
+			}
+
+			@keyframes mymove {
+			  50% {background: blue bottom right/80px 80px;}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Animation of background</h1>
+
+		<p>Gradually change the background property:<p>
+		<div id="myDIV"></div>
+	</body>
+</html>
