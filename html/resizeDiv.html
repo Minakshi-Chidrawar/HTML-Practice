@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			  $("button").click(function(){
+				$("#div1").width(300).height(100);
+			  });
+			});
+		</script>
+		<style>
+			#div1 {
+			  height: 300px;
+			  width: 500px;
+			  padding: 10px;
+			  margin: 3px;
+			  border: 1px solid blue;
+			  background-color: lightblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<br>
+
+		<button>Resize div</button>
+	</body>
+</html>
