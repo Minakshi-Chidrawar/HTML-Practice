@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Ajax tutorial</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="myButton"><a href="">Click Me</a></div>
+		<div id="output"></div>
+
+<!-- C:\Program Files (x86)\Google\Chrome\Application>chrome.exe -allow-file-access-from-files -->		
+		<script>
+			$("#myButton").click(function(e){
+				var url = "C:/GitHub/HTML-Practice/txt/test.txt";
+				e.preventDefault();
+				console.log("Clicked!");
+				$("#output").load(url);
+			});
+		</script>
+	</body>
+</html>
