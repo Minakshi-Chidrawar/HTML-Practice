@@ -11,13 +11,11 @@
 			// Storing data:
 			myObj = { name: "John", age: 31, city: "New York" };
 			myJSON = JSON.stringify(myObj);
-			alert(myJSON);
 			localStorage.setItem("testJSON", myJSON);
 
 			// Retrieving data:
 			text = localStorage.getItem("testJSON");
 			obj = JSON.parse(text);
-			alert(obj);
 			document.getElementById("demo").innerHTML = obj.name;
 		</script>
 	</body>
