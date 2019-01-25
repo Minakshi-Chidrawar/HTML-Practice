@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<p>Use bracket notation to access the properties and property values.</p>
+
+		<p id="demo"></p>
+
+		<script>
+			var myObj = {"name":"John", "age":30, "car":null};
+			
+			for (x in myObj) {
+			  document.getElementById("demo").innerHTML += x + ": " + myObj[x] + "<br>";
+			}
+		</script>
+	</body>
+</html>
