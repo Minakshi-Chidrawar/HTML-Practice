@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function bigImg(x) {
+			  x.style.height = "153px";
+			  x.style.width = "218px";
+			}
+
+			function normalImg(x) {
+			  x.style.height = "133px";
+			  x.style.width = "178px";
+			}
+		</script>
+	</head>
+	<body>
+		<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images/flower.jpg" 
+			alt="Smiley" width="178" height="138">
+
+		<p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
+		<p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
+	</body>
+</html>
