@@ -2,14 +2,14 @@
 <html>
 	<head>
 		<script>
-			function myFunction() {
-			  var x = document.getElementById("fname");
-			  x.value = x.value.toUpperCase();
+			function whichButton(event) {
+			  document.getElementById("demo").innerHTML = event.keyCode;
 			}
 		</script>
 	</head>
-	<body>
-		<p>A function is triggered when the user releases a key in the input field. The function transforms the character to upper case.</p>
-		Enter your name: <input type="text" id="fname" onkeyup="myFunction()">
+	<body onkeyup="whichButton(event)">
+		<p>Click on this page, and press a key on your keyboard.</p>
+
+		<p id="demo"></p>
 	</body>
 </html>
